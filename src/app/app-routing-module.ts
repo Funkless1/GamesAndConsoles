@@ -2,12 +2,15 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { Consoles } from './consoles/consoles';
 import { Game } from './game/game';
-import { Games } from './models/games';
+import { ConsoleDetails } from './console-details/console-details';
+import { GameDetails } from './game-details/game-details';
 
 const routes: Routes = [
   {path: 'consoles', component: Consoles},
+  {path: 'console/:id', component: ConsoleDetails},
   {path: 'game', component: Game},
-  {path: 'game/console/:consoleId', component: Game},
+  {path: 'game/:id', component: GameDetails},
+  {path: 'game/consoles/:consoleId', component: Game},
   {path: '', redirectTo: '/consoles', pathMatch: 'full'}
 ];
 
