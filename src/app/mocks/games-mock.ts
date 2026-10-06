@@ -1,6 +1,6 @@
-import { Game } from "../models/game";
+import { Games } from "../models/games";
 
-export const GAMES: Game[] = [
+export const GAMES: Games[] = [
     {
         id: 1,
         consoleId: 1,

@@ -1,1 +1,14 @@
-<p>game works!</p>
+@if(!!games) {
+    <div>
+        @for(g of games; track g.id) {
+            <div>
+            @if(!!g.cover){
+                <img [src]="g.cover" style="height:200px;width:auto;">
+            }
+            </div>
+            <div>
+                <h5>{{g.name}}</h5>
+            </div>
+        }
+    </div>
+}
