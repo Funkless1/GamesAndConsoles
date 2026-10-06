@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { GameConsole } from '../models/game-console'; //added imports
+import { CONSOLES } from '../mocks/consoles-mock'; //import
 
 @Component({
   selector: 'app-consoles',
@@ -6,4 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './consoles.css',
   templateUrl: './consoles.html',
 })
-export class Consoles {}
+export class Consoles {
+  //added an array of GameConsole objects populated with the contents of CONSOLES (consoles-mock.ts)
+  consoles: GameConsole[] = CONSOLES;
+}

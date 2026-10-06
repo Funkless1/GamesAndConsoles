@@ -1,1 +1,13 @@
-<p>consoles works!</p>
+<div>
+    @for (c of consoles; track c.id) {
+        <div>
+            @if(!!c.images) {  <!-- !! essentially forces the content to be a boolean, safer because javascript is wierd and might not read the data as a boolean-->
+                <img [src]="c.images[0]" style="height:200px;width:auto">
+            }
+        </div>
+        <div>
+            <h5>{{c.name}}</h5>
+            <p>{{c.manufacturer}}</p>
+        </div>
+    }
+</div>

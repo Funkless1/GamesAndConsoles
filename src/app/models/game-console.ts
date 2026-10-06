@@ -1,7 +1,7 @@
 export class GameConsole {
     id?: number;
     name?: string;
-    maunufacturer?: string;
+    manufacturer?: string;
     price?: number;
     releaseDate?: Date;
     images?: string[];
