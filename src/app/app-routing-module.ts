@@ -7,7 +7,7 @@ import { GameDetails } from './game-details/game-details';
 
 const routes: Routes = [
   {path: 'consoles', component: Consoles},
-  {path: 'console/:id', component: ConsoleDetails},
+  {path: 'consoles/:id', component: ConsoleDetails},
   {path: 'game', component: Game},
   {path: 'game/:id', component: GameDetails},
   {path: 'game/consoles/:consoleId', component: Game},
