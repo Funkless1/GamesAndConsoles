@@ -4,7 +4,7 @@ export const GAMES: Games[] = [
     {
         id: 1,
         consoleId: 1,
-        name: 'Zelda Breathe of the Wild',
+        name: 'Zelda Breath of the Wild',
         cover: 'https://m.media-amazon.com/images/I/81KLVpfTWIL._AC_SY445_SX342_QL70_ML2_.jpg',
         publisher: 'Nintendo',
         price: 99.99
@@ -20,7 +20,7 @@ export const GAMES: Games[] = [
     {
         id: 3,
         consoleId: 2,
-        name: 'Mario Cart',
+        name: 'Mario Kart',
         cover: 'https://m.media-amazon.com/images/I/91gw375wCjL._AC_SY445_SX342_QL70_ML2_.jpg',
         publisher: 'Nintendo',
         price: 99.99
